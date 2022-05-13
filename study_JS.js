@@ -171,3 +171,68 @@
 // } else {
 //   console.log("you old");
 // }
+
+// Use HTML in JS
+
+// 1. document
+// const titles = document.getElementById("title");
+// console.log(titles);
+// console.log(titles.innerHTML);
+
+// console.log(titles.id);
+// console.log(titles.className);
+
+// titles.innerText = "gotyou!";
+// console.log(titles.innerText);
+
+// const hellos = document.getElementsByTagName("h1");
+// console.log(hellos);
+
+// const title = document.querySelector("div.hello:first-child h1");
+// console.log(title);
+
+// // 2. JS Objects
+
+// const h1 = document.querySelector("div.hello:first-child h1");
+
+// function clickTitle() {
+//   console.log("you click me!");
+//   h1.style.color = "blue";
+// }
+// function mouseEnterTitle() {
+//   console.log("you cursor on me!");
+//   h1.innerText = "you are on out!";
+// }
+// function mouseLeaveTitle() {
+//   h1.innerText = "you leave out!";
+// }
+// // functions are activated by JS
+// // title.addEventListener("click", clickTitle);
+// h1.onclick = clickTitle;
+
+// // title.addEventListener("mouseenter", mouseEnterTitle);
+// h1.onmouseenter = mouseEnterTitle;
+
+// // title.addEventListener("mouseleave", mouseLeaveTitle);
+// h1.onmouseleave = mouseLeaveTitle;
+
+// // 3. window
+
+// // resize -> convert 'window' as you want
+// function windowResize() {
+//   document.body.style.backgroundColor = "tomato";
+// }
+// // copy checks
+// function copyWindow() {
+//   alert("copier!"); // prompt
+// }
+// function offlineWindow() {
+//   alert("SOS no wifi!");
+// }
+// function onlineWindow() {
+//   alert("wifi on!");
+// }
+// window.addEventListener("resize", windowResize);
+// window.addEventListener("copy", copyWindow);
+// window.addEventListener("offline", offlineWindow);
+// window.addEventListener("online", onlineWindow);

@@ -1,9 +1,15 @@
-// Use HTML in JS
+const h1 = document.querySelector("div.hello:first-child h1");
 
-// 1. document
-const titles = document.getElementById("title");
-console.log(titles);
-console.log(titles.innerHTML);
-console.log(titles.innerText);
-console.log(titles.id);
-console.log(titles.className);
+function mouseEnterControl() {
+  const currentColor = h1.style.color;
+  let newColor;
+
+  h1.innerText = "you on me!";
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor;
+}
+h1.addEventListener("click", mouseEnterControl);
