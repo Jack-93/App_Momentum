@@ -236,3 +236,52 @@
 // window.addEventListener("copy", copyWindow);
 // window.addEventListener("offline", offlineWindow);
 // window.addEventListener("online", onlineWindow);
+
+// const h1 = document.querySelector("div.hello:first-child h1");
+
+// function mouseEnterControl() {
+//   const currentColor = h1.style.color;
+//   let newColor;
+
+//   h1.innerText = "you on me!";
+//   if (currentColor === "blue") {
+//     newColor = "tomato";
+//   } else {
+//     newColor = "blue";
+//   }
+//   h1.style.color = newColor;
+// }
+// h1.addEventListener("click", mouseEnterControl);
+
+// // 1. Class
+// const h1 = document.querySelector("div.hello:first-child h1");
+
+// function mouseEnterControl() {
+//   // const classH1 = h1.className;
+//   const activeClass = "active";
+//   if (h1.className === activeClass) {
+//     h1.className = "";
+//   } else {
+//     h1.className = activeClass;
+//   }
+// }
+// h1.addEventListener("click", mouseEnterControl);
+
+// const h1 = document.querySelector("div.hello:first-child h1");
+// function mouseEnterControl() {
+//   // const classH1 = h1.className;
+//   const activeClass = "active";
+//   if (h1.classList.contains(activeClass)) {
+//     h1.classList.remove(activeClass);
+//   } else {
+//     h1.classList.add(activeClass);
+//   }
+// }
+// h1.addEventListener("click", mouseEnterControl);
+
+// // toggle() => remove, add automatically
+// const h1 = document.querySelector("div.hello:first-child h1");
+// function mouseEnterControl() {
+//   h1.classList.toggle("active");
+// }
+// h1.addEventListener("click", mouseEnterControl);

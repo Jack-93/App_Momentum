@@ -1,5 +1,11 @@
-/* CSS, the language used to style web pages */
+/* CSS, the language performed web style */
 
 body {
   background-color: beige;
+}
+h1 {
+  color: gray;
+}
+.active {
+  color: green;
 }
