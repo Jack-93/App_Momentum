@@ -12,14 +12,24 @@ the language that gives web content structure and meaning -->
     <!-- relationship, URL reference -->
     <link rel="stylesheet" , href="style.css" />
 
-    <title>Momentum</title>
+    <title>Momentum Application</title>
   </head>
 
   <body>
-    <div class="hello">
-      <h1 class="sexy-font">Grab me 1</h1>
-    </div>
-
+    <form id="login-form">
+      <!-- required ~~="" -> browser func -->
+      <!-- <a href="https://jack-93.github.io">Tech Blog of jack-93</a> -->
+      <input
+        required
+        maxlength="15"
+        value=""
+        type="text"
+        placeholder="What is your name?"
+      />
+      <!-- submit -> form(browser) func, refresh website  -->
+      <input type="submit" value="Log In" />
+      <!-- <button>Log In</button> => button is not browser's func -->
+    </form>
     <!-- src: js file script -->
     <script src="HTML_in_JS.js"></script>
   </body>
