@@ -499,3 +499,43 @@ const loginForm = document.querySelector("#login-form");
 // // Draw text on screen
 // quote.innerText = todaysQuotes.quote;
 // author.innerText = todaysQuotes.author;
+
+// Add images on HTML with Javascript
+// const images = [
+//   "Earth.jpg",
+//   "Milkyway.jpg",
+//   "Andromeda.jpg",
+//   "Andromeda2.jpg",
+//   "Andromeda3.jpg",
+// ];
+// const selectImages = images[Math.floor(Math.random() * images.length)];
+// const bgImages = document.createElement("img");
+
+// // console.log(selectImages);
+// bgImages.src = `img/${selectImages}`;
+
+// // add child node "body" to parent node
+// document.body.appendChild(bgImages);
+// // console.log(bgImages);
+
+// const toDoForm = document.querySelector("#todo-form");
+// const toDoInput = toDoForm.querySelector("#todo-form input");
+// const toDoList = document.querySelector("#todo-list");
+
+// function toDoSubmitF(event) {
+//   event.preventDefault();
+//   // newTodo != value
+//   const newTodo = toDoInput.value;
+//   toDoInput.value = "";
+//   paintToDo(newTodo);
+// }
+// // only paint, not save, delete
+// function paintToDo(newTodo) {
+//   const makeList = document.createElement("li");
+//   const makeSpan = document.createElement("span");
+//   makeList.appendChild(makeSpan);
+//   makeSpan.innerText = newTodo;
+//   toDoList.appendChild(makeList);
+// }
+
+// toDoForm.addEventListener("submit", toDoSubmitF);

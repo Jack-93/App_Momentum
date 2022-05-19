@@ -6,11 +6,12 @@ const images = [
   "Andromeda2.jpg",
   "Andromeda3.jpg",
 ];
-
 const selectImages = images[Math.floor(Math.random() * images.length)];
 const bgImages = document.createElement("img");
-console.log(selectImages);
+
+// console.log(selectImages);
 bgImages.src = `img/${selectImages}`;
+
 // add child node "body" to parent node
 document.body.appendChild(bgImages);
-console.log(bgImages);
+// console.log(bgImages);
