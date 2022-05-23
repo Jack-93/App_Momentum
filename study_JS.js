@@ -539,3 +539,40 @@ const loginForm = document.querySelector("#login-form");
 // }
 
 // toDoForm.addEventListener("submit", toDoSubmitF);
+
+// const toDoForm = document.querySelector("#todo-form");
+// const toDoInput = toDoForm.querySelector("#todo-form input");
+// const toDoList = document.querySelector("#todo-list");
+
+// function toDoSubmitF(event) {
+//   event.preventDefault();
+//   // newTodo != value
+//   const newTodo = toDoInput.value;
+//   toDoInput.value = "";
+//   paintToDo(newTodo);
+// }
+// function deleteToDo(event) {
+//   const li = event.target.parentElement;
+//   li.remove();
+// }
+// // only paint, not save, delete
+// function paintToDo(newTodo) {
+//   const makeList = document.createElement("li");
+//   const makeSpan = document.createElement("span");
+//   makeSpan.innerText = newTodo;
+
+//   const makeButteon = document.createElement("button");
+//   makeButteon.innerText = "X";
+//   makeList.appendChild(makeSpan);
+//   makeList.appendChild(makeButteon);
+//   toDoList.appendChild(makeList);
+
+//   makeButteon.addEventListener("click", deleteToDo);
+// }
+
+// toDoForm.addEventListener("submit", toDoSubmitF);
+
+// save, text -> string
+// function saveToDo() {
+//   localStorage.setItem("arraytodo", JSON.stringify(arrayToDo));
+// }
