@@ -16,28 +16,40 @@ function toDoSubmitF(event) {
   // newTodo != value
   const newTodo = toDoInput.value;
   toDoInput.value = "";
-  arrayToDo.push(newTodo);
-  paintToDo(newTodo);
+
+  const newObjectTodo = {
+    id: Date.now(),
+    text: newTodo,
+  };
+  arrayToDo.push(newObjectTodo);
+
+  paintToDo(newObjectTodo);
+
   saveToDo();
 }
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
+  console.log(li.id);
   li.remove();
+  arrayToDo = arrayToDo.filter((toDo) => toDo.id !== parseInt(li.id));
+  saveToDo();
 }
-// only paint, not save, delete
+
 function paintToDo(newTodo) {
-  const makeList = document.createElement("li");
-  const makeSpan = document.createElement("span");
-  makeSpan.innerText = newTodo;
+  const li = document.createElement("li");
+  li.id = newTodo.id;
+  const span = document.createElement("span");
+  span.innerText = newTodo.text;
 
-  const makeButteon = document.createElement("button");
-  makeButteon.innerText = "X";
-  makeList.appendChild(makeSpan);
-  makeList.appendChild(makeButteon);
-  toDoList.appendChild(makeList);
+  const button = document.createElement("button");
+  button.innerText = "X";
+  button.addEventListener("click", deleteToDo);
 
-  makeButteon.addEventListener("click", deleteToDo);
+  // arrayToDo.push(newTodo);
+  li.appendChild(span);
+  li.appendChild(button);
+  toDoList.appendChild(li);
 }
 
 toDoForm.addEventListener("submit", toDoSubmitF);
@@ -49,3 +61,6 @@ if (savedToDoKey !== null) {
   arrayToDo = parsedToDo;
   parsedToDo.forEach(paintToDo);
 }
+
+// // filter -> return value
+// function filterForId(item) {}
