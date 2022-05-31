@@ -40,7 +40,7 @@ const quotes = [
     author: "Mahatma Gandhi",
   },
   {
-    quote: "Be kind, that is you and me, us",
+    quote: "Be kind, that is you, me and us",
     author: "Jack",
   },
 ];

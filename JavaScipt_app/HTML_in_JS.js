@@ -11,7 +11,6 @@ function paintGreetings() {
 
   greeting.innerText = `Hello ${username}`;
 }
-
 // submitLogIn(JS gives you info which you need with first argu);
 function submitLogIn(event) {
   event.preventDefault();

@@ -6,7 +6,7 @@ the language that gives web content structure and meaning -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- relationship, URL reference -->
@@ -20,25 +20,25 @@ the language that gives web content structure and meaning -->
   </head>
 
   <body>
-    <form id="login-form" class="hidden">
-      <!-- required ~~="" -> browser func -->
-      <input
-        required
-        maxlength="15"
-        value=""
-        type="text"
-        placeholder="What is your name?"
-      />
-      <!-- submit -> form(browser) func, refresh website  -->
-      <input type="submit" value="Log In" />
-      <!-- <button>Log In</button> => button is not browser's func -->
-    </form>
-
     <div id="weather">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
+    <form id="login-form" class="hidden">
+      <!-- required ~~="" -> browser func -->
+      <input
+        required
+        maxlength="30"
+        value=""
+        type="text"
+        placeholder="Sir, What is your name?"
+      />
+      <!-- submit -> form(browser) func, refresh website  -->
+      <input type="submit" value="Log In" />
+      <!-- <button>Log In</button> => button is not browser's func -->
+    </form>
 
     <!-- default f1 is (class="hidden"), only display when there are text -->
     <h1 id="greeting" class="hidden"></h1>
@@ -46,6 +46,7 @@ the language that gives web content structure and meaning -->
     <form id="todo-form">
       <input type="text" placeholder="Write a Todo List" required />
     </form>
+
     <ul id="todo-list"></ul>
 
     <div id="quote">
@@ -54,8 +55,10 @@ the language that gives web content structure and meaning -->
     </div>
 
     <h2 id="clock"></h2>
-    <p href="https://jack-93.github.io">Tech Blog of jack-93</p>
   </body>
+
+  <p href="https://jack-93.github.io">>Tech Blog of jack-93<</p>
+  <p href="https://www.instagram.com/zig_jack93">>instagram of jack-93<</p>
 
   <!-- src: js file script -->
   <script src="JavaScipt_app/HTML_in_JS.js"></script>
