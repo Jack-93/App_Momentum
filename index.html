@@ -11,14 +11,17 @@ the language that gives web content structure and meaning -->
 
     <!-- relationship, URL reference -->
     <link rel="stylesheet" , href="CSS_app/style.css" />
-
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Momentum Application</title>
   </head>
 
   <body>
     <form id="login-form" class="hidden">
       <!-- required ~~="" -> browser func -->
-      <!-- <a href="https://jack-93.github.io">Tech Blog of jack-93</a> -->
       <input
         required
         maxlength="15"
@@ -30,29 +33,35 @@ the language that gives web content structure and meaning -->
       <input type="submit" value="Log In" />
       <!-- <button>Log In</button> => button is not browser's func -->
     </form>
+
     <div id="weather">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
     <!-- default f1 is (class="hidden"), only display when there are text -->
     <h1 id="greeting" class="hidden"></h1>
+
     <form id="todo-form">
       <input type="text" placeholder="Write a Todo List" required />
     </form>
     <ul id="todo-list"></ul>
+
     <div id="quote">
       <span></span>
       <span></span>
     </div>
 
     <h2 id="clock"></h2>
-    <!-- src: js file script -->
-    <script src="JavaScipt_app/HTML_in_JS.js"></script>
-    <script src="JavaScipt_app/clock.js"></script>
-    <script src="JavaScipt_app/quote.js"></script>
-    <script src="JavaScipt_app/image.js"></script>
-    <script src="JavaScipt_app/todo.js"></script>
-    <script src="JavaScipt_app/weather.js"></script>
+    <p href="https://jack-93.github.io">Tech Blog of jack-93</p>
   </body>
+
+  <!-- src: js file script -->
+  <script src="JavaScipt_app/HTML_in_JS.js"></script>
+  <script src="JavaScipt_app/clock.js"></script>
+  <script src="JavaScipt_app/quote.js"></script>
+  <script src="JavaScipt_app/image.js"></script>
+  <script src="JavaScipt_app/todo.js"></script>
+  <script src="JavaScipt_app/weather.js"></script>
 </html>
