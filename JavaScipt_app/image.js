@@ -5,6 +5,7 @@ const images = [
   "Andromeda.jpg",
   "Andromeda2.jpg",
   "Andromeda3.jpg",
+  "Onew.png",
 ];
 // random painting
 const selectImages = images[Math.floor(Math.random() * images.length)];
