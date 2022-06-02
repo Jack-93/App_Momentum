@@ -5,7 +5,8 @@ const images = [
   "Andromeda.jpg",
   "Andromeda2.jpg",
   "Andromeda3.jpg",
-  "Onew.jpg",
+  "kakurenbo.jpg",
+  "Rainyblue.jpg",
   "youtube.jpg",
   "naver.jpg",
   "google.jpg",
@@ -14,7 +15,7 @@ const images = [
 const selectImages = images[Math.floor(Math.random() * images.length)];
 const bgImages = document.createElement("img");
 
-bgImages.src = `image/${selectImages}`;
+bgImages.src = `img/${selectImages}`;
 
 // add child node "body" to parent node
 document.body.appendChild(bgImages);

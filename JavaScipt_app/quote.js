@@ -49,5 +49,5 @@ const author = document.querySelector(".author");
 
 const random = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = random.quote;
+quote.innerText = random.quote + ` - `;
 author.innerText = random.author;

@@ -13,7 +13,7 @@ const cover = document.getElementById("music-cover");
 //
 
 // Song Titles
-const songs = ["Rainyblue"];
+const songs = ["Rainyblue", "kakurenbo"];
 
 // Keep track of song
 let songIndex = 0;
