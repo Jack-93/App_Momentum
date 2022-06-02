@@ -5,13 +5,16 @@ const images = [
   "Andromeda.jpg",
   "Andromeda2.jpg",
   "Andromeda3.jpg",
-  "Onew.png",
+  "Onew.jpg",
+  "youtube.jpg",
+  "naver.jpg",
+  "google.jpg",
 ];
 // random painting
 const selectImages = images[Math.floor(Math.random() * images.length)];
 const bgImages = document.createElement("img");
 
-bgImages.src = `img/${selectImages}`;
+bgImages.src = `image/${selectImages}`;
 
 // add child node "body" to parent node
 document.body.appendChild(bgImages);

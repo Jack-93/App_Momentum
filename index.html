@@ -1,6 +1,8 @@
 <!-- HTML,
 the language that gives web content structure and meaning -->
 
+<!--/Users/jaewookohe/Desktop/frontEnd/App_Momentum/index.html -->
+
 <!-- Start to use "!" -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,25 +19,25 @@ the language that gives web content structure and meaning -->
     <link rel="stylesheet" , href="CSS_app/link.css" />
     <link rel="stylesheet" , href="CSS_app/music.css" />
     <link rel="stylesheet" , href="CSS_app/menu_top.css" />
-    <link rel="stylesheet" , href="CSS_app/modal.css" />
+    <link rel="stylesheet" , href="CSS_app/login.css" />
+    <link rel="stylesheet" , href="CSS_app/menu.css" />
 
+    <!-- fonts API -->
     <link
       href="http://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- site Theme -->
     <title>Momentum Application</title>
   </head>
 
   <body>
     <div id="main-wrap">
       <div id="wrap">
-        <div id="dark-wrap"></div>
+        <!-- <div id="dark-wrap"></div> -->
         <div id="main-box">
-          <div class="dot-first"></div>
-          <div class="dot-second"></div>
-          <div class="dot-third"></div>
-          <div class="dot-fourth"></div>
+          <!-- calcul -> opensource -->
           <div id="calculator-wrap">
             <div id="calculator-box">
               <form class="calculator" name="calc">
@@ -185,7 +187,7 @@ the language that gives web content structure and meaning -->
                 <div class="img-container">
                   <div class="music-dot"></div>
                   <div class="img-back"></div>
-                  <img src="img/Onew.jpg" alt="" id="music-cover" />
+                  <img src="img/Rainyblue.jpg" alt="" id="music-cover" />
                 </div>
 
                 <div class="navi">
@@ -200,7 +202,7 @@ the language that gives web content structure and meaning -->
                   </button>
                 </div>
               </div>
-              <h2>Music Player</h2>
+              <h2>Music for you ' >'</h2>
             </div>
           </div>
         </div>
@@ -208,7 +210,7 @@ the language that gives web content structure and meaning -->
 
       <div id="menu-box">
         <ul class="menu">
-          <li class="goole">
+          <li class="goolue">
             <a href="https://www.google.com/" target="_blank"></a>
           </li>
           <li class="naver">
@@ -217,23 +219,35 @@ the language that gives web content structure and meaning -->
           <li class="youtube">
             <a href="https://www.youtube.com/" target="_blank"></a>
           </li>
-          <li class="nomad">
-            <a href="https://nomadcoders.co/" target="_blank"></a>
-          </li>
-          <li class="dark"><i class="fas fa-moon"></i></li>
+          <!-- <li class="dark"><i class="fas fa-moon"></i></li> -->
         </ul>
       </div>
+
       <div id="background"></div>
+    </div>
+
+    <!-- first income -> modal form - login -->
+    <div id="login">
+      <form class="login-form">
+        <p class="login-title">Good day ' >'</p>
+        <input
+          class="login-input"
+          maxlength="30"
+          type="text"
+          placeholder="Hello, Who are you?"
+        />
+        <button type="submit" class="login-btn">Submit</button>
+      </form>
     </div>
 
     <script src="JavaScipt_app/Clock.js"></script>
     <script src="JavaScipt_app/image.js"></script>
-    <script src="JavaScipt_app/login.js"></script>
     <script src="JavaScipt_app/music.js"></script>
     <script src="JavaScipt_app/quote.js"></script>
     <script src="JavaScipt_app/todo.js"></script>
     <script src="JavaScipt_app/weather.js"></script>
-    <script src="JavaScipt_app/modal.js"></script>
+    <script src="JavaScipt_app/login.js"></script>
+    <script src="JavaScipt_app/dycalendar.js"></script>
 
     <script>
       dycalendar.draw({

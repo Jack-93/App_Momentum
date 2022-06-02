@@ -94,7 +94,7 @@
   position: absolute;
   bottom: -16px;
   left: -10.2px;
-  animation: rotate 3s linear infinite;
+  animation: rotate 4s linear infinite;
 
   animation-play-state: paused;
 }

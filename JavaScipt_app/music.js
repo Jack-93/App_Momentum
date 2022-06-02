@@ -1,22 +1,19 @@
 const musicContainer = document.getElementById("music-container");
+//
 const playBtn = document.getElementById("play");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
-
+//
 const audio = document.getElementById("audio");
 const progress = document.getElementById("progress");
 const progressContainer = document.getElementById("progress-container");
+//
 const title = document.getElementById("music-title");
 const cover = document.getElementById("music-cover");
+//
 
 // Song Titles
-const songs = [
-  "Rainy blue",
-  "After a long time",
-  "Reflection of your smile",
-  "Rest Easy",
-  "Seasons",
-];
+const songs = ["Rainyblue"];
 
 // Keep track of song
 let songIndex = 0;
@@ -28,7 +25,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  cover.src = `image/${song}.jpg`;
+  cover.src = `img/${song}.jpg`;
 }
 
 // Play song

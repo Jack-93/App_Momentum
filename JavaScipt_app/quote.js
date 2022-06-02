@@ -44,11 +44,10 @@ const quotes = [
     author: "Jack",
   },
 ];
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector(".text");
+const author = document.querySelector(".author");
 
-const todaysQuotes = quotes[Math.floor(Math.random() * quotes.length)];
+const random = quotes[Math.floor(Math.random() * quotes.length)];
 
-// Draw text on screen
-quote.innerText = todaysQuotes.quote;
-author.innerText = todaysQuotes.author;
+quote.innerText = random.quote;
+author.innerText = random.author;
