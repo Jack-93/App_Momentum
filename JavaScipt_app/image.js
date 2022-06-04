@@ -17,5 +17,6 @@ const bgImages = document.createElement("img");
 
 bgImages.src = `img/${selectImages}`;
 
+const back = document.querySelector("#background");
 // add child node "body" to parent node
 document.body.appendChild(bgImages);
