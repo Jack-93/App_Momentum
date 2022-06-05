@@ -1,8 +1,7 @@
-// Add strings
 const quotes = [
   {
     quote: "What doesn't destroy me, makes me stronger",
-    author: "Friedrich Wilhelm Nietzsche",
+    author: "Friedrich W. Nietzsche",
   },
   {
     quote:
@@ -49,5 +48,5 @@ const author = document.querySelector(".author");
 
 const random = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = random.quote + ` - `;
+quote.innerText = random.quote;
 author.innerText = random.author;

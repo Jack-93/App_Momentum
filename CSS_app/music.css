@@ -124,9 +124,9 @@
 
 .action-btn {
   color: rgb(242, 6, 6);
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(144, 143, 237, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -186,15 +186,13 @@
 }
 
 .progress-container {
-  background: rgba(255, 211, 182, 0.4);
-  border: 1px solid rgba(255, 211, 182, 0.8);
+  background: rgba(113, 100, 226, 0.4);
+  border: 1px solid rgba(165, 162, 196, 0.8);
   border-left: 1px solid rgba(255, 211, 182, 0.3);
   border-top: 1px solid rgba(255, 211, 182, 0.3);
-  border-radius: 5px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px auto;
   height: 5px;
-  width: 100%;
   transition: 0.3s;
 }
 

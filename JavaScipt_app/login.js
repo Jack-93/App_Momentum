@@ -19,7 +19,7 @@ function paintGreetings(username) {
   if (username === "") {
     name.innerText = `Hello, Sir!`;
   } else {
-    name.innerText = `Good Day, ${username}`;
+    name.innerText = `Good day! pretty, ${username}`;
   }
 }
 
