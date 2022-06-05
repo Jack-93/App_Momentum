@@ -9,11 +9,6 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weatherImg = document.querySelector(".weatherIcon");
-      weatherImg.src = ``;
-
-      console.log(weatherImg);
-
       document.querySelector(
         "#json > ul > li:nth-child(2) > div > ul > li > div > ul > li:nth-child(2) > div > span.type-string"
       );
