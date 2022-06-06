@@ -13,7 +13,11 @@ const cover = document.getElementById("music-cover");
 //
 
 // Song Titles
-const songs = ["Rainyblue"];
+const songs = [
+  "Rainy_blue-Onew",
+  "kakurenbo-Yuuri",
+  "Hard_To_Say_Iamsorry-Chicago",
+];
 
 // Keep track of song
 let songIndex = 0;

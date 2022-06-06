@@ -15,12 +15,16 @@ the language that gives web content structure and meaning -->
     <link rel="stylesheet" , href="CSS_app/style.css" />
     <link rel="stylesheet" , href="CSS_app/weather.css" />
     <link rel="stylesheet" , href="CSS_app/clock.css" />
-    <link rel="stylesheet" , href="CSS_app/image.css" />
     <link rel="stylesheet" , href="CSS_app/link.css" />
     <link rel="stylesheet" , href="CSS_app/music.css" />
-    <link rel="stylesheet" , href="CSS_app/menu_top.css" />
     <link rel="stylesheet" , href="CSS_app/login.css" />
     <link rel="stylesheet" , href="CSS_app/menu.css" />
+    <link rel="stylesheet" , href="CSS_app/dacalendar.css" />
+    <link rel="stylesheet" , href="CSS_app/calcul.css" />
+    <link rel="stylesheet" , href="CSS_app/todo.css" />
+    <link rel="stylesheet" , href="CSS_app/quote.css" />
+    <link rel="stylesheet" , href="CSS_app/calender.css"/>
+    <link rel="styleshhet" , href="CSS_app/background.css"/>
 
     <!-- fonts API -->
     <link
@@ -33,9 +37,9 @@ the language that gives web content structure and meaning -->
   </head>
 
   <body>
+    <!-- <div id="background"></div> -->
     <div id="main-wrap">
       <div id="wrap">
-        <!-- <div id="dark-wrap"></div> -->
         <div id="main-box">
           <!-- calcul -> opensource -->
           <div id="calculator-wrap">
@@ -163,11 +167,11 @@ the language that gives web content structure and meaning -->
                 <form id="todo-input">
                   <input
                     class="todo-input-text"
-                    maxlength="20"
+                    maxlength="30"
                     type="text"
                     placeholder="Please write your to-do!"
                   />
-                  <button class="todo-input-btn"></button>
+                  <!-- <button class="todo-input-btn"></button> -->
                 </form>
               </div>
             </div>
@@ -181,13 +185,14 @@ the language that gives web content structure and meaning -->
                     <div class="progress" id="progress"></div>
                   </div>
                 </div>
-
-                <audio id="audio" src="music/Rainyblue.mp3"></audio>
-
+                <audio id="audio" src="music/Rainy_blue-Onew.mp3"></audio>
+                <!-- <audio id="audio" src="music/kakurenbo.mp3"></audio> -->
                 <div class="img-container">
                   <div class="music-dot"></div>
                   <div class="img-back"></div>
-                  <img src="img/Rainyblue.jpg" alt="" id="music-cover" />
+
+                  <img src="img/Rainy_blue-Onew.jpg" alt="" id="music-cover" />
+                  <!-- <img src="img/kakurenbo.jpg" alt="" id="music-cover" /> -->
                 </div>
 
                 <div class="navi">
@@ -210,7 +215,7 @@ the language that gives web content structure and meaning -->
 
       <div id="menu-box">
         <ul class="menu">
-          <li class="goolue">
+          <li class="google">
             <a href="https://www.google.com/" target="_blank"></a>
           </li>
           <li class="naver">
@@ -219,11 +224,16 @@ the language that gives web content structure and meaning -->
           <li class="youtube">
             <a href="https://www.youtube.com/" target="_blank"></a>
           </li>
-          <!-- <li class="dark"><i class="fas fa-moon"></i></li> -->
+          <li class="instagram">
+            <a
+              href="https://www.instagram.com/zig_sparrow/"
+              target="_blank"
+            ></a>
+            <li class="github"><a href="https://github.com/Jack-93"
+              target="_blank"></a></li>
+          </li>
         </ul>
       </div>
-
-      <div id="background"></div>
     </div>
 
     <!-- first income -> modal form - login -->
@@ -240,14 +250,14 @@ the language that gives web content structure and meaning -->
       </form>
     </div>
 
-    <script src="JavaScipt_app/Clock.js"></script>
-    <script src="JavaScipt_app/image.js"></script>
-    <script src="JavaScipt_app/music.js"></script>
+    <script src="JavaScipt_app/Clock.js"></script>    <script src="JavaScipt_app/music.js"></script>
     <script src="JavaScipt_app/quote.js"></script>
     <script src="JavaScipt_app/todo.js"></script>
     <script src="JavaScipt_app/weather.js"></script>
     <script src="JavaScipt_app/login.js"></script>
     <script src="JavaScipt_app/dycalendar.js"></script>
+    <script src="JavaScipt_app/background.js"></script>
+    <script src="JavaScipt_app/calcul.js"></script>
 
     <script>
       dycalendar.draw({
@@ -259,6 +269,7 @@ the language that gives web content structure and meaning -->
         prevnextbutton: "show",
       });
     </script>
+
   </body>
 
   <!-- src: js file script -->

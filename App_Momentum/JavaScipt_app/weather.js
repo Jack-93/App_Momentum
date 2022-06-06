@@ -2,23 +2,27 @@
 
 const API_KEY = "72e0a34cdd3a9350bc5014f5b7aee68b";
 
-function onGeoPosition(position) {
-  const lati = position.coords.latitude;
-  const longi = position.coords.longitude;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&appid=${API_KEY}`;
-  // ask to server, then wait for response
+function onGeoOk(position) {
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url)
-    .then((respon) => respon.json())
+    .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:nth-child(2)");
-      //   const uvindex = document.querySelector("#weather span:last-child");
-      weather.innerText = data.name;
-      city.innerText = `\n${data.weather[0].main}\n${data.main.temp}`;
+      document.querySelector(
+        "#json > ul > li:nth-child(2) > div > ul > li > div > ul > li:nth-child(2) > div > span.type-string"
+      );
+
+      const temp = document.querySelector(".temp");
+      temp.innerText = `${data.main.temp}'C`;
+
+      const city = document.querySelector(".city");
+      city.innerText = data.name;
     });
 }
+
 function onGeoError() {
-  alert("There is not weather");
+  alert("Can't find you.");
 }
 
-navigator.geolocation.getCurrentPosition(onGeoPosition, onGeoError);
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

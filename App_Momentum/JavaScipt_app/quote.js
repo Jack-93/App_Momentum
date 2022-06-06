@@ -1,8 +1,7 @@
-// Add strings
 const quotes = [
   {
     quote: "What doesn't destroy me, makes me stronger",
-    author: "Friedrich Wilhelm Nietzsche",
+    author: "Friedrich W. Nietzsche",
   },
   {
     quote:
