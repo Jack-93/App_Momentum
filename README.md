@@ -1,6 +1,7 @@
 # Chrome App
-# Calender App
-# Web Calendar 이용 링크 : 
+# Calender
+
+Web Calendar 이용 링크 : 
 
 - Learning JS, HTML, CSS basics
 - Chrome Application with JS, HTML, CSS
