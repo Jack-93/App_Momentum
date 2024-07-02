@@ -1,7 +1,14 @@
 # JS_Make_ChromeApp
+# Web Calendar 이용 링크 : 
 
-- Learning JS, HTML, CSS from basics
-- Start to make a Chrome Application with JS, HTML, CSS
+- Learning JS, HTML, CSS basics
+- Chrome Application with JS, HTML, CSS
 - implement
-
 - Calender App
+
+1. To-Do List
+2. Calendar
+3. Music Player
+4. Calculator
+5. Clock
+6. Weather
